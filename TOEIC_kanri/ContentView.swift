@@ -16,23 +16,29 @@ struct ContentView: View {
         
     var body: some View {
         NavigationView{
-        VStack{
+        VStack(spacing: 50){
             /*
             List{
                         ForEach(setumon.setumons, id: \.self){aa in
                             Text(aa)
                         }
                     }*/
-        Text("start")
+        Text("TOEIC　設問管理ストップウォッチ").fontWeight(.black)
             
         NavigationLink(destination:
                 StopWatch()){
 
-                   Text("MAP")
+                   Text("START").fontWeight(.black)
+                
                     
              
-            }
+            }.foregroundColor(.white)
+          
+        .padding(.all)
+        .background(Color.blue)
+            .cornerRadius(20)
             
+            Spacer()
    
             
             }
