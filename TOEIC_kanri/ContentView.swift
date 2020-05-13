@@ -7,15 +7,46 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct ContentView: View {
+    
+    @EnvironmentObject var setumon: Setumon
+ @State var showingDetail = false
+        
     var body: some View {
-        Text("Hello, World!")
-    }
+        NavigationView{
+        VStack{
+            /*
+            List{
+                        ForEach(setumon.setumons, id: \.self){aa in
+                            Text(aa)
+                        }
+                    }*/
+        Text("start")
+            
+        NavigationLink(destination:
+                StopWatch()){
+
+                   Text("MAP")
+                    
+             
+            }
+            
+   
+            
+            }
+               }
+        }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
+    static let setumon = Setumon()
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(setumon)
+     
     }
 }
+
+
