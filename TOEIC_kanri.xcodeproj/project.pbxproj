@@ -14,6 +14,10 @@
 		D53B9C5F2431BB9600BA0CCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D53B9C5E2431BB9600BA0CCE /* Assets.xcassets */; };
 		D53B9C622431BB9600BA0CCE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D53B9C612431BB9600BA0CCE /* Preview Assets.xcassets */; };
 		D53B9C652431BB9600BA0CCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D53B9C632431BB9600BA0CCE /* LaunchScreen.storyboard */; };
+		D53B9C732432433200BA0CCE /* TimeHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53B9C722432433200BA0CCE /* TimeHolder.swift */; };
+		D53B9C7524330B0500BA0CCE /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53B9C7424330B0500BA0CCE /* StopWatch.swift */; };
+		D53B9C77243344BD00BA0CCE /* DecideQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53B9C76243344BD00BA0CCE /* DecideQuestion.swift */; };
+		D53B9C792433876700BA0CCE /* Setumon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53B9C782433876700BA0CCE /* Setumon.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		D53B9C612431BB9600BA0CCE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D53B9C642431BB9600BA0CCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D53B9C662431BB9600BA0CCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D53B9C722432433200BA0CCE /* TimeHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeHolder.swift; sourceTree = "<group>"; };
+		D53B9C7424330B0500BA0CCE /* StopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
+		D53B9C76243344BD00BA0CCE /* DecideQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecideQuestion.swift; sourceTree = "<group>"; };
+		D53B9C782433876700BA0CCE /* Setumon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setumon.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,10 @@
 				D53B9C662431BB9600BA0CCE /* Info.plist */,
 				D53B9C592431BB9400BA0CCE /* TOEIC_kanri.xcdatamodeld */,
 				D53B9C602431BB9600BA0CCE /* Preview Content */,
+				D53B9C722432433200BA0CCE /* TimeHolder.swift */,
+				D53B9C7424330B0500BA0CCE /* StopWatch.swift */,
+				D53B9C76243344BD00BA0CCE /* DecideQuestion.swift */,
+				D53B9C782433876700BA0CCE /* Setumon.swift */,
 			);
 			path = TOEIC_kanri;
 			sourceTree = "<group>";
@@ -150,7 +162,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D53B9C5B2431BB9400BA0CCE /* TOEIC_kanri.xcdatamodeld in Sources */,
+				D53B9C77243344BD00BA0CCE /* DecideQuestion.swift in Sources */,
 				D53B9C562431BB9400BA0CCE /* AppDelegate.swift in Sources */,
+				D53B9C792433876700BA0CCE /* Setumon.swift in Sources */,
+				D53B9C732432433200BA0CCE /* TimeHolder.swift in Sources */,
+				D53B9C7524330B0500BA0CCE /* StopWatch.swift in Sources */,
 				D53B9C5D2431BB9400BA0CCE /* ContentView.swift in Sources */,
 				D53B9C582431BB9400BA0CCE /* SceneDelegate.swift in Sources */,
 			);
@@ -290,6 +306,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TOEIC_kanri/Preview Content\"";
+				DEVELOPMENT_TEAM = Y9HCGNMS37;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TOEIC_kanri/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -309,6 +326,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"TOEIC_kanri/Preview Content\"";
+				DEVELOPMENT_TEAM = Y9HCGNMS37;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TOEIC_kanri/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
