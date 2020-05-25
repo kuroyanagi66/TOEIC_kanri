@@ -24,12 +24,15 @@ struct ContentView: View {
                         }
                     }*/
         Text("TOEIC　設問管理ストップウォッチ").fontWeight(.black)
+            .onTapGesture {
+                print("ss")
+            }
             
         NavigationLink(destination:
                 StopWatch()){
 
                    Text("START").fontWeight(.black)
-                
+               
                     
              
             }.foregroundColor(.white)
