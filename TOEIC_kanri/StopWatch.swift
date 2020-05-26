@@ -59,7 +59,8 @@ struct StopWatch: View {
                 Text("設問選択").font(.title)
             }      .sheet(isPresented: $showingDetail){
              DecideQuestion().environmentObject(self.setumon)
-                  }
+                  }.navigationBarTitle("")
+                  .navigationBarHidden(true)
             Text(self.setumon.setumons).font(.title)
 
         //Text("\(timeRemaining)")合計時間（秒）
