@@ -27,7 +27,7 @@ struct StopWatch: View {
         @State var showingDetail = false
         @State var num = 0
         @State var nokori_time = 4500 // min
-        @State var nokori_text = "00 : 00 . 00"
+        @State var nokori_text = "01 : 15 . 00"
   
     
     let timer = Timer.publish(every: 0.01, on: .main, in: .common).autoconnect()

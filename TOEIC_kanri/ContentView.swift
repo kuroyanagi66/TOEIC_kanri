@@ -23,11 +23,11 @@ struct ContentView: View {
                             Text(aa)
                         }
                     }*/
-        Text("TOEIC　設問管理ストップウォッチ").fontWeight(.black)
-            .onTapGesture {
-                print("ss")
-            }
+        Text("　　TOEIC　reading\n設問管理ストップウォッチ").fontWeight(.black)
+       
             
+            //Text("設問管理ストップウォッチ").fontWeight(.black)
+                   
         NavigationLink(destination:
                 StopWatch()){
 
