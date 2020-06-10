@@ -18,7 +18,7 @@ class TimerHolder : ObservableObject {
    func start() {
        self.timer?.invalidate()
        self.count = 0
-       self.timer = Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) {
+    self.timer = Timer.scheduledTimer(withTimeInterval:0.01, repeats: true) {
            _ in
            self.count += 1
        }

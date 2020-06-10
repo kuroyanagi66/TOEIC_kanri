@@ -76,13 +76,11 @@ struct StopWatch: View {
             }) {
             Text("START").font(.title)
         }
-                
-                
-           .onReceive(timer) { _ in
+            .onReceive(timer) { _ in
                 if  self.timeRemaining >= 0
             && self.flag == 1 && self.hour < 100 {
                    
-                 self.timeRemaining += 1
+                    self.timeRemaining += 1
                     self.goukei_top = method1(intValue: self.timeRemaining)
             
                     
@@ -90,7 +88,9 @@ struct StopWatch: View {
             }
             
             
-                Button(action: {self.flag = 0}) {
+                Button(action: {self.flag = 0
+
+                }) {
                 Text("STOP").font(.title)
             }
             
@@ -171,7 +171,7 @@ struct StopWatch: View {
                 self.kiroku = []
                 self.goukei = 0
                 self.goukei_text = "00 : 00 . 00"
-                self.nokori_text = "00 : 00 . 00"
+                self.nokori_text = "01 : 15 . 00"
                 
             }) {
                 Text("Reset all")
