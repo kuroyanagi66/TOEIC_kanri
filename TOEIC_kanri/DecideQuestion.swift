@@ -17,7 +17,9 @@ struct DecideQuestion: View {
     @State private var selection = 49
     @State private var selection2 = 49
     @EnvironmentObject var setumon: Setumon
+    @State private var kaitouDate = Date()
     @State var text_ = ""
+   
    
     var body: some View {
         
@@ -26,7 +28,7 @@ struct DecideQuestion: View {
         VStack{
             
             
-            
+            List{
 
                 
             HStack{
@@ -42,28 +44,34 @@ struct DecideQuestion: View {
                     }.padding()
             }
 
-
+ Text(kaitouDate.description)
             
-        Text("開始番号")
-            Picker(selection: $selection, label: Text("問題番号")) {
+       // Text("開始番号")
+            Picker(selection: $selection, label: Text("開始")) {
     
                               ForEach(101 ..< 201) { num in
                                   Text(String(num))
                                   
                               }
                           }
-                          .labelsHidden()
+                         // .labelsHidden()
             
-            Text("終了番号")
-                Picker(selection: $selection2, label: Text("問題番号")) {
+            //Text("終了番号")
+                Picker(selection: $selection2, label: Text("終了")) {
                                   ForEach(101 ..< 201) { num in
                                       Text(String(num))
                                       
                                   }
                               }
-                              .labelsHidden()
+                              //.labelsHidden()
+            
+            DatePicker(selection: $kaitouDate) {
+               
+                Text("日付")
+            }
+            
         }
-        
+        }
     }
 }
 
